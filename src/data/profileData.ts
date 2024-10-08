@@ -1,4 +1,4 @@
-const profileData = {
+export const profileData = {
   personalDetails: {
     name: "Balraj Singh",
     nickname: "Balraj",
