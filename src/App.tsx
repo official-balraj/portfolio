@@ -13,7 +13,7 @@ import Experience from "./components/Experience/Experience.tsx";
 import Education from "./components/Education/Education.tsx";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails.tsx";
 import styled from "styled-components";
-import { ThemeProvider } from "@mui/material";
+import { ThemeProvider } from "styled-components";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
