@@ -84,7 +84,7 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Rishav Chanda</Logo>
+        <Logo>{Bio.name}</Logo>
         <Nav>
           s<NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
@@ -97,7 +97,7 @@ function Footer() {
             <LinkedInIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2023 Rishav Chanda. All rights reserved.</Copyright>
+        <Copyright>&copy; 2024 {Bio.name}. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
