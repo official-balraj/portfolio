@@ -208,3 +208,13 @@ export const ResumeButton = styled.a`
     } 
 
 `;
+
+export const CertBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  transition: 0.5s ease-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+`;

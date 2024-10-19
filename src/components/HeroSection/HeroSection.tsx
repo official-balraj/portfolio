@@ -11,6 +11,7 @@ import {
   Span,
   SubTitle,
   ResumeButton,
+  CertBox,
 } from "./HeroStyle";
 import HeroImg from "../../images/HeroImage.jpg";
 import Typewriter from "typewriter-effect";
@@ -44,8 +45,8 @@ const HeroSection = () => {
             <SubTitle>{Bio.description}</SubTitle>
             <Box display={"flex"} pb={"30px"}>
               {certifications.map((cert) => (
-                <Box display={"flex"} flexDirection={"column"} mr={"10px"}>
-                  <a href={cert.link}>
+                <CertBox>
+                  <a href={cert.link} title="Click to view the certification">
                     <img
                       src={cert.batch}
                       style={{
@@ -55,7 +56,7 @@ const HeroSection = () => {
                       }}
                     ></img>
                   </a>
-                </Box>
+                </CertBox>
               ))}
             </Box>
 
