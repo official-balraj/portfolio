@@ -15,7 +15,7 @@ import {
 import HeroImg from "../../images/HeroImage.jpg";
 import Typewriter from "typewriter-effect";
 import { Bio, certifications } from "../../data/constants";
-import { Box, ImageList, ImageListItem } from "@mui/material";
+import { Box } from "@mui/material";
 
 const HeroSection = () => {
   return (
