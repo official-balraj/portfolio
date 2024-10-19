@@ -2,7 +2,14 @@ import styled from "styled-components";
 import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.card_light};
+  background-color: #580032;
+  background-image: linear-gradient(
+    225deg,
+    #580032 0%,
+    #00334a 50%,
+    #000000 100%
+  );
+
   display: flex;
   justify-content: center;
   position: relative;
