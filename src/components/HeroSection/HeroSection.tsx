@@ -14,7 +14,8 @@ import {
 } from "./HeroStyle";
 import HeroImg from "../../images/HeroImage.jpg";
 import Typewriter from "typewriter-effect";
-import { Bio } from "../../data/constants";
+import { Bio, certifications } from "../../data/constants";
+import { Box, ImageList, ImageListItem } from "@mui/material";
 
 const HeroSection = () => {
   return (
@@ -41,6 +42,23 @@ const HeroSection = () => {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
+            <Box display={"flex"} pb={"30px"}>
+              {certifications.map((cert) => (
+                <Box display={"flex"} flexDirection={"column"} mr={"10px"}>
+                  <a href={cert.link}>
+                    <img
+                      src={cert.batch}
+                      style={{
+                        width: "100px",
+                        height: "100px",
+                        marginRight: "20px",
+                      }}
+                    ></img>
+                  </a>
+                </Box>
+              ))}
+            </Box>
+
             <ResumeButton href={Bio.resume} target="display">
               Check Resume
             </ResumeButton>
